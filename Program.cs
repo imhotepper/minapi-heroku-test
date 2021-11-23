@@ -9,10 +9,10 @@ builder.Services.AddSwaggerGen(c =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment()){
+// if (app.Environment.IsDevelopment()){
      app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", $"{builder.Environment.ApplicationName} v1"));
-}
+// }
 
 app.MapGet("/", () => "Up and running...");
 app.MapGet("/{id:int}", (int id) => $"Getting data forId:{id}");
