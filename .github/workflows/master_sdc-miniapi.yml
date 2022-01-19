@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'sdc-miniapi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_85D422F7E4984DE1A6A1E9FD7B32D2F7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2F10B54382C442668CD22E6F0A39C5F6 }}
           package: .
